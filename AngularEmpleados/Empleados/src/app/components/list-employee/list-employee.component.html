@@ -1,0 +1,41 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="card p-0">
+            <div class="card-title bg-dark text-white p-1">
+                <h3>List Employees</h3>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-success float-end" routerLink="/create-employee">Agregar</button>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Documento</th>
+                            <th scope="col">Salario</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Luis</td>
+                            <td>Posada</td>
+                            <td>23792498</td>
+                            <td>3000</td>
+                            <td><i class="fa-solid fa-pen-to-square text-success"></i>
+                                &nbsp;<i class="fa-solid fa-trash text-danger"></i>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul>
+                  <li class="text" *ngFor="let item of items | async">
+                    {{item.name}}
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

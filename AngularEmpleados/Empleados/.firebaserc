@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "empleadosapp-e0e2c"
+  },
+  "targets": {
+    "empleadosapp-e0e2c": {
+      "hosting": {
+        "Empleados": [
+          "empleadosapp-e0e2c"
+        ]
+      }
+    }
+  }
+}
